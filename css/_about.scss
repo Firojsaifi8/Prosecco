@@ -1,0 +1,23 @@
+#sustainable{
+    padding-top: 120px;
+    padding-bottom: 166px;
+    .bottle-center{
+        top:-70px;
+        left: 90px;
+        @media(max-width: 767px) {
+            width: 170px;
+        }
+    }
+}
+
+#goldStein{
+    padding-top: 210px;
+    @media(max-width: 767px) {
+        padding-top: 60px;
+     }
+    img{
+        @media(max-width: 767px) {
+           position: relative !important;
+        }
+    }
+}

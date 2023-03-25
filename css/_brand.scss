@@ -1,0 +1,181 @@
+.padding-left{
+    max-width: 64%;
+    @media(max-width: 767px) {
+        max-width: 100%;
+   }
+}
+.padding-right{
+    max-width: 36%;
+        @media(max-width: 767px) {
+            max-width: 100%;   }
+}
+
+ #premium{
+    .line-1{
+        &::after{
+          content: url('../image/assets/line-1.svg');
+          position: absolute;
+          left: 49.6%;
+          top: 103%;
+          @media(max-width: 767px) {
+             display: none;
+        }
+      }
+    }
+    
+      .line-2{
+        &::after{
+          content: url('../image/assets/line-2.svg');
+          position: absolute;
+          left: -15%;
+    top: 88%;
+          @media(max-width: 767px) {
+            display: none;
+       }
+        }
+        
+      }
+      .line-3{
+        &::after{
+          content: url('../image/assets/line-3.svg');
+          position: absolute;
+         
+        left: -18%;
+        top: 9%;
+        @media(max-width: 767px) {
+            display: none;
+       }
+         
+        }
+      }
+      .line-4{
+        &::after{
+          content: url('../image/assets/line-4.svg');
+          position: absolute;
+          left: 50%;
+          top: -125%;
+          @media(max-width: 767px) {
+            display: none;
+       }
+        }
+      }
+      .line-5{
+        &::after{
+          content: url('../image/assets/line-5.svg');
+          position: absolute;
+          left: 49%;
+          top: 11px;
+          @media(max-width: 767px) {
+            display: none;
+       }
+        }
+      }
+      .line-6{
+        &::after{
+          content: url('../image/assets/line-6.svg');
+          position: absolute;
+          left: 46%;
+          top: 57px;
+          @media(max-width: 767px) {
+            display: none;
+       }
+        }
+      }
+      .mt-n2{
+        margin-top: -38px;
+        @media(max-width: 767px) {
+            margin-top: 75px; 
+        }
+    }
+    .pt-72{
+        padding-top: 72px;
+        @media(max-width: 767px) {
+            padding-top: 0px; 
+        }
+    }
+ }
+
+ #buying{
+    .line-1{
+        &::after{
+          content: url('../image/assets/line-1.svg');
+          position: absolute;
+          left: 49.6%;
+          top: 103%;
+          @media(max-width: 767px) {
+             display: none;
+        }
+      }
+    }
+    
+      .line-2{
+        &::after{
+          content: url('../image/assets/line-2.svg');
+          position: absolute;
+          left: -15%;
+          top: 43%;      
+          @media(max-width: 767px) {
+            display: none;
+       }
+        }
+        
+      }
+      .line-3{
+        &::after{
+          content: url('../image/assets/line-3.svg');
+          position: absolute;
+         
+        left: -18%;
+        top: 9%;
+        @media(max-width: 767px) {
+            display: none;
+       }
+         
+        }
+      }
+      .line-4{
+        &::after{
+          content: url('../image/assets/line-4.svg');
+          position: absolute;
+          left: 50%;
+          bottom:93%;
+          @media(max-width: 767px) {
+            display: none;
+       }
+        }
+      }
+      .line-5{
+        &::after{
+          content: url('../image/assets/line-5.svg');
+          position: absolute;
+          left: 49%;
+          top: 11px;
+          @media(max-width: 767px) {
+            display: none;
+       }
+        }
+      }
+      .line-6{
+        &::after{
+          content: url('../image/assets/line-6.svg');
+          position: absolute;
+          left: 46%;
+         top: 57px;
+          @media(max-width: 767px) {
+            display: none;
+       }
+        }
+      }
+      .mt-n2{
+        margin-top: 3px;
+    @media(max-width: 767px) {
+        margin-top: 75px; 
+    }
+}
+.pt-72{
+    padding-top: 43px;
+    @media(max-width: 767px) {
+        padding-top: 0px; 
+    }
+}
+ }

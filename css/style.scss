@@ -1,0 +1,70 @@
+@import '_variable';
+@import '_mixin';
+@import '_common';
+@import 'nav';
+@import '_about';
+@import '_brand';
+@import '_footer';
+
+.slick-slider {
+    .card {
+        @media(max-width: 767px) {
+            background-color: var(--gary-light) !important;
+        }
+    }
+
+    h5 {
+        @media(max-width: 767px) {
+            font-size: var(--font-xl);
+        }
+    }
+
+    .slick-list:not(.slick-slider-seen > .slick-list) {
+        .slider-content {
+            margin: 10px 0;
+        }
+
+        &::before {
+            content: '';
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            position: absolute;
+            top: 0;
+            height: 111px;
+            width: 100%;
+            z-index: 9;
+
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+
+        &::after {
+            content: '';
+            background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 1) 100%);
+            position: absolute;
+            bottom: 0;
+            height: 100px;
+            width: 100%;
+            z-index: 9;
+
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+}
+.content{
+    visibility: hidden;
+}
+.card-a.zoom-in {
+    height: 100vh;
+    overflow: hidden;
+    img {
+        transform: scale(1.3);
+        transition: all 0.3s ease-in-out;
+        height: 100%;
+    }
+    .content{
+        visibility: visible;
+    }
+}

@@ -1,0 +1,158 @@
+@font-face {font-family: "Favorit Light";
+    src: url("./fonts/d73d37902ec72250867b578d3763ee38.eot"); /* IE9*/
+    src: url("./fonts/d73d37902ec72250867b578d3763ee38.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/d73d37902ec72250867b578d3763ee38.woff2") format("woff2"), /* chrome、firefox */
+    url("./fonts/d73d37902ec72250867b578d3763ee38.woff") format("woff"), /* chrome、firefox */
+    url("./fonts/d73d37902ec72250867b578d3763ee38.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./fonts/d73d37902ec72250867b578d3763ee38.svg#Favorit Light") format("svg"); /* iOS 4.1- */
+}
+body,h1,h2,h3,h4,h5,h6,button, span{
+    font-family:"Favorit Light", sans-serif !important;
+}
+h1,.h1{
+    font-size: var(--font-3xl);
+    @media (max-width: 1023px) {
+        font-size: var(--font-32);
+    }
+}
+h2,.h2{
+    font-size: var(--font-2xl);
+    @media (max-width: 1023px) {
+        font-size: var(--font-32);
+    }
+}
+h3,.h3{
+    font-size: var(--font-xl);
+}
+.fs-96{
+    font-size: var(--font-4xl);
+    @media (max-width: 1023px) {
+        font-size: var(--font-32);
+    }
+}
+.fs-18{
+    font-size: var(--font-x);
+}
+.font-1xl{
+    font-size: var(--font-1xl);
+}
+.lh-xl{
+    line-height: var(--lh-xl);
+}
+.lh-x{
+    line-height: var(--lh-xl);  
+}
+.text-success{
+    color: var(--success) !important;
+}
+.bg-green{
+    background-color: var(--green) !important;
+}
+.text-black{
+    color: var(--black) !important;
+}
+.bg-black{
+    background-color: var(--black);
+}
+.btn{
+    padding: 16px 24px !important;
+    font-size: var(--font-x);
+}
+.btn.icon::after{
+    content: url('../image/assets/arrow-right.svg');
+    vertical-align: middle;
+}
+.btn.icon-dark::after{
+    content: url('../image/assets/arrow-right-dark.svg');
+    vertical-align: middle;
+}
+.btn-dark{
+    background-color: var(--black) !important;
+}
+.bg-light{
+    background-color: var(--light) !important;
+}
+.btn-outline-dark{
+    &:hover{
+        background-color: var(--white) !important;
+        color: var(--black);
+    }
+}
+.rounded-40{
+    @include radius(var(--radius-40))
+}
+.rounded-20{
+    @include radius(var(--radius-20))
+}
+.rounded-31{
+    @include radius(var(--radius-31));
+}
+.shadow-3xl{
+    box-shadow: var(--shadow-xl);
+}
+.form-control{
+    background: var(--light);
+    border: 1px solid var(--gray);
+}
+.px-7{
+    padding-left: 117px;
+    padding-right: 117px;
+    @media (max-width: 1023px) {
+        padding-left: 22px;
+        padding-right: 22px; 
+    }
+}
+.pt-100{
+    padding-top: 100px;
+}
+.mt-n1{
+    margin-top: -10px;
+}
+.active-list{
+    background-color: var(--success) !important;
+}
+@media (min-width: 1500px){
+   .container-xxl {
+        max-width: 1412px;
+    }
+}
+.footer-logo{
+    max-width: 201px;
+}
+@media(max-width: 767px) {
+    .gap-10{
+        gap:10px;
+    } 
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    @include height(18px, 18px);
+    @include radius(50px);
+    background: var(--black);
+    cursor: pointer;
+    margin-top: -10px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  }
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: var(--black);
+}
+
+.ribbin{
+    &::before{
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: -6px;
+        background-color: var(--light);
+        @include height(32px, 32px);
+        transform: rotate(46deg);
+        @media (max-width: 767px){
+            display: none !important;
+         }
+      }
+}
+ 
